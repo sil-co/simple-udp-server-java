@@ -5,7 +5,11 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 
 public class UdpClient {
-    public void sendToUdpServer() {
+    public static void main(String[] args) {
+        UdpClient.sendToUdpServer();
+    }
+
+    public static void sendToUdpServer() {
         final String SERVER_ADDRESS = "localhost";
         final int SERVER_PORT = 8883;
 
